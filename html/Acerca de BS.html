@@ -24,12 +24,34 @@
             background-position: center;
         }
 
-        h1{
+        .transition{
+            height: 50px;
+            width: 500px;
+            background-image: url(plano.jpeg);
+            background-position: auto;
+            text-align: center;
+            font-size: 38px;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            border: 2px solid #000;
+        }
+
+        .t1 {
+            transition: height 2.7s;
+
+        }
+
+        .t1 :hover {
+            height: 200px;
+        }
+
+        /*h1{
             color:rgb(0, 0, 0);
             background-image: repeating-linear-gradient(45deg, #333, rgb(87, 80, 17) 5px, rgb(105, 77, 14) 5px, gold 10px);
             text-shadow: 0 0 20px 5px rgb(7, 1, 1);
             box-shadow: 0 0 10px 5px #333;
-        }
+            transform: skew(10dg);
+        }  */
 
         p{
             color: rgb(10, 8, 7);
@@ -82,10 +104,28 @@
 
         }
 
-        .carrouselle-indicators li{
+        /* >.carrouselle-indicators li{
             height: 20px;
             width: 20px;
 
+        } */
+
+        .container{
+            height: auto;
+            width: 90%;
+            background-image: url(plano\ 3\ chico.jpeg);
+            padding: 50px;
+            margin: auto; 
+        }
+
+        .container h2{
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: uppercase;
+            color: rgb(51, 38, 11);
+            text-shadow: 5px 5px 5px rgb(44, 44, 43);
+            transform: skew(10dg);
         }
 
     </style>
@@ -132,9 +172,11 @@
         </section>
     </header>
     <br><br>
-    <h1>Acerca de BestStands</h1>
+    
+        <div class="transition" id="t1">Acerca de BestStands</div>
+    
     <br><br>
-    <p class="pbottom"><span></span>Somos una empresa familiar que se 
+    <p class="pbottom"><span>Somos una empresa familiar que se 
         dedica al diseño y construcción de stands artesanales para exposiciones, puntos de 
         venta y arquitectura publicitaria en general. Nuestro principal objetivo es entender 
         las necesidades de nuestros clientes para poder ofrecer el mejor servicio y que su 
@@ -147,6 +189,7 @@
         los seguimientos de obra necesarios para que nada quede al libre albedrío ni al azar.
         Podemos decir que desde el comienzo hasta ahora, y gracias a nuestra dedicación, hemos 
         logrado ganarnos un lugar en el exclusivo y competitivo mercado de los eventos.
+        </span>
         </p>
     <br><br>
     
@@ -166,8 +209,7 @@
             </div>
 
             <button type="button" class="btn btn-warning" 
-            data-toggle="dropdown">boton basico
-        </button>
+            data-toggle="dropdown">Acceder</button>
         <div class="dropdown-toggle">
 
         </div>
