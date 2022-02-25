@@ -15,8 +15,13 @@
 <body>
     <style>
 
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
         body{
-            background-image: url(plano\ 2.jpeg);
+            background-image: url(img/plano\ 2.jpeg);
             background-size: cover;
             background-position: center;
         }
@@ -27,7 +32,7 @@
             padding: auto;
             text-shadow: 0 0 20px 10px rgb(7, 1, 1);
             box-shadow: 0 0 10px 5px #333;
-            background-image: url(plano.jpeg);
+            background-image: url(img/plano.jpeg);
             border: 5px groove #c5a53b;
             border-width: 10px;
             font-family: fantasy;
@@ -42,7 +47,7 @@
             padding: auto;
             text-shadow: 0 0 20px 10px rgb(7, 1, 1);
             box-shadow: 0 0 10px 5px #333;
-            background-image: url(tablas\ .jpeg);
+            background-image: url(img/tablas\ .jpeg);
             border: 5px groove #c5a53b;
             border-width: 10px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -52,13 +57,13 @@
 
         footer {
             display: inline-block;
-            width: 20%;
+            width: 200%;
             position: relative;
             font-size: 20px;
         }
 
         nav {
-            background-image: url(fondo\ moderno.jpeg);
+            background-image: url(img/fondo\ moderno.jpeg);
             width: 50%;
             height: 100%;
         }
@@ -73,6 +78,12 @@
             padding: 0.4rem;
             transform: scale(1);
         }
+
+
+        /*a {
+            padding: 400px;
+            text-align: center;
+        }*/
 
         /* ul {
             list-style: none;
@@ -89,12 +100,12 @@
             width: 20%;
             position: relative;
             font-size: 25px;
-        } */
+        } 
 
         li a:hover {
             color: rgb(241, 183, 58);
             text-decoration: line-through;
-        }
+        } */
 
         /*@keyframes un_efecto{
             0%{width: 100px;}
@@ -173,18 +184,34 @@
             <br>
 
             <p>También puede visitar nuestra Galería de imágenes para ver algunos de nuestros trabajos.</p>
+            
             <br><br>
-            <a href="#">ver mas</a>
+            
+            <a href="Acerca de BS.html">
+            <button type="button" class="btn btn-outline-info">Ver Mas</button>
+            </a> 
+
         </div>
     </main>
+
     <br><br>
     <br><br>
     <br><br>
+
     <footer>
+        
+        <nav class="nav">
+            <a class="nav-link active" aria-current="page" href="index.html">BestStands</a>
+            <a class="nav-link" href="http://facebook.com">Facebook</a>
+            <a class="nav-link" href="http://instagram.com">Instagram</a>
+        </nav>
+
+        <!--
         <div>
-            <a href="http://facebook.com">facebook</a><br>
+            <a href="http://facebook.com">facebook</a><br><br>
             <a href="http://instagram.com">instagram</a>
         </div>
+        -->
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
 integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" 
@@ -193,5 +220,7 @@ crossorigin="anonymous"></script>
 integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" 
 crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
+
+
 </body>
 </html>
